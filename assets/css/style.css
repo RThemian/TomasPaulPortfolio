@@ -6,6 +6,7 @@
   --color-base: #033f47;
   --color-base2: #022a30;
   --color-brand: #e0f780;
+  --color-brand2: #ffdf00;
   --color-border: #9780f7;
   --sidebar-width: 240px;
   --font-base: "Bai Jamjuree", sans-serif;
@@ -40,23 +41,42 @@ a:hover {
 img {
   width: 100%;
 }
+.text-brand {
+  color: var(--color-brand);
+}
+
+.full-height {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
 
 /*NAVBAR*/
 
-.navbar .nav-link {
-  font-weight: 700;
+.navbar,
+.nav-link {
+  font-weight: 900;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--color-body);
 }
-.navbar .nav-link:hover {
-  color: var(--color-brand);
+.nav-item {
+  margin-bottom: 20px;
+}
+
+.nav-item a:hover {
+  color: var(yellow);
 }
 
 @media (min-width: 992px) {
   .navbar {
     min-height: 100vh;
     width: var(--sidebar-width);
-    background: linear-gradient(rgba(3, 63, 71, 0.82), rgba(3, 63, 71, 0.753)),
+    background: linear-gradient(rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8)),
       url(../images/forest.jpeg);
     background-size: cover;
   }
@@ -66,4 +86,52 @@ img {
 }
 .navbar-brand img:hover {
   border: 8px solid var(--color-brand);
+}
+
+/*CONTENT WRAPPER*/
+#content-wrapper {
+  padding-left: var(--sidebar-width);
+}
+
+/*Button*/
+
+.btn {
+  padding: 12px 28px;
+  font-weight: 700;
+}
+
+.btn-brand {
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+}
+.btn-brand:hover,
+.btn-brand:focus {
+  background-color: var(--color-brand2);
+  color: var(--color-base);
+  border-color: var(--color-brand2);
+}
+
+.link-custom {
+  font-weight: 700;
+  position: relative;
+}
+.bg-base {
+  background-color: var(--color-base);
+}
+.link-custom::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-brand);
+  left: 0;
+  top: 110%;
+  transition: all 0.4s;
+}
+
+.shadow-effect {
+  transition: all 0.5s;
+}
+.shadow-effect:hover {
+  box-shadow: -6px 6px 0 0 var(--color-brand);
 }

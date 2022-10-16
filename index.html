@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <a target="_blank" href="https://icons8.com/icon/40293/feather"
+      >Feather icon by Icons8</a
+    >
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +16,7 @@
   </head>
   <body>
     <!-- NAVBAR-->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container flex-lg-column">
         <a class="navbar-brand mx-lg-auto mb-lg-4" href="#"
           ><span class="h3 fw-bold d-block d-lg-none">Tomas Paul</span>
@@ -34,36 +37,78 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto flex-lg-column">
+          <ul class="navbar-nav ms-auto flex-lg-column fs-4">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home"
-                >Home</a
-              >
+              <a aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#services"
-                >Services</a
-              >
+              <a aria-current="page" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#work"
-                >Work</a
-              >
+              <a aria-current="page" href="#work">Work</a>
+            </li>
+            <li class="nav-item link-custom">
+              <a aria-current="page" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#about"
-                >About</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#contact"
-                >Contact</a
-              >
+              <a aria-current="page" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <!-- END OF NAVBAR -->
+
+    <!-- CONTENT WRAPPER -->
+    <div id="content-wrapper">
+      <!-- HOME -->
+      <section id="home" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <h1 class="fw-bold display-4">
+                I'm a
+                <span class="text-brand">Software Developer</span> from Fort
+                Collins, CO
+              </h1>
+              <p class="lead">Hi, I'm Tomas Paul</p>
+              <a href="#work" class="btn btn-brand">Explore my work (CHANGE)</a>
+              <a href="#work">Call: 588 - 2300</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--//HOME-->
+      <!--SERVICES-->
+      <section id="services" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <h6 class="text-brand">SERVICES</h6>
+              <h1>Services That I Provide</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="service p-4 bg-base rounded-3 shadow-effect">
+                <div class="iconbox">
+                  <i class="las la-feather"></i>
+                </div>
+                <h4>Branding</h4>
+                <p>
+                  I craft high-performing and delightful experiences tailored
+                  and conversation-focused
+                </p>
+                <a href="#" class="link-custom">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--//SERVICES-->
+    </div>
+    <!--CONTENT WRAPPER-->
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
