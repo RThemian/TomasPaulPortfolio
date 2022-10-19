@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="./assets/css/line-awesome.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
+
+  <body data-spy="scroll" data-target="navbar">
     <!-- NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container flex-lg-column">
@@ -39,20 +40,31 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto flex-lg-column fs-4">
             <li class="nav-item">
-              <a aria-current="page" href="#home">Home</a>
+              <a class=nav-link" aria-current="page" href="#home"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a aria-current="page" href="#services">Services</a>
+              <a class=nav-link" aria-current="page" href="#services"
+                >Services</a
+              >
             </li>
             <li class="nav-item">
-              <a aria-current="page" href="#work">Work</a>
+              <a class=nav-link" aria-current="page" href="#work"
+                >Work</a
+              >
             </li>
-            <li class="nav-item link-custom">
-              <a aria-current="page" href="#about">About</a>
+            
+            <li class="nav-item">
+              <a class=nav-link" aria-current="page" href="#about"
+                >About</a
+              >
             </li>
             <li class="nav-item">
-              <a aria-current="page" href="#contact">Contact</a>
-            </li>
+              <a class=nav-link" aria-current="page" href="#contact"
+                >Contact</a
+              >
+           
           </ul>
         </div>
       </div>
@@ -71,9 +83,11 @@
                 <span class="text-brand">Software Developer</span> from Fort
                 Collins, CO
               </h1>
-              <p class="lead">Hi, I'm Tomas Paul</p>
-              <a href="#work" class="btn btn-brand">Explore my work (CHANGE)</a>
-              <a href="#work">Call: 588 - 2300</a>
+              <p class="lead mt-2 mb-4">Hi, I'm Tomas Paul</p>
+              <a href="#work" class="btn btn-brand me-3"
+                >Explore my work (CHANGE)</a
+              >
+              <a href="#work" class="link-custom">Call: 588 - 2300</a>
             </div>
           </div>
         </div>
@@ -94,7 +108,33 @@
                 <div class="iconbox">
                   <i class="las la-feather"></i>
                 </div>
-                <h4>Branding</h4>
+                <h4 class="mt-4 mb-2">Branding</h4>
+                <p>
+                  I craft high-performing and delightful experiences tailored
+                  and conversation-focused
+                </p>
+                <a href="#" class="link-custom">Read More</a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service p-4 bg-base rounded-3 shadow-effect">
+                <div class="iconbox">
+                  <i class="las la-feather"></i>
+                </div>
+                <h4 class="mt-4 mb-2">Branding</h4>
+                <p>
+                  I craft high-performing and delightful experiences tailored
+                  and conversation-focused
+                </p>
+                <a href="#" class="link-custom">Read More</a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service p-4 bg-base rounded-3 shadow-effect">
+                <div class="iconbox">
+                  <i class="las la-feather"></i>
+                </div>
+                <h4 class="mt-4 mb-2">Branding</h4>
                 <p>
                   I craft high-performing and delightful experiences tailored
                   and conversation-focused

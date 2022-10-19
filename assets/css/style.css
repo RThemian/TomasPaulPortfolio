@@ -58,12 +58,20 @@ img {
 
 /*NAVBAR*/
 
-.navbar,
-.nav-link {
+.navbar .nav-link {
   font-weight: 900;
   text-transform: uppercase;
   color: var(--color-body);
 }
+
+.navbar .navlink:hover {
+  color: var(--color-brand);
+}
+
+.navbar .nav-link.active {
+  color: var(--color-brand);
+}
+
 .nav-item {
   margin-bottom: 20px;
 }
@@ -112,12 +120,11 @@ img {
 }
 
 .link-custom {
-  font-weight: 700;
+  font-weight: 900;
+  font-size: 25px;
   position: relative;
 }
-.bg-base {
-  background-color: var(--color-base);
-}
+
 .link-custom::after {
   content: "";
   position: absolute;
@@ -129,9 +136,28 @@ img {
   transition: all 0.4s;
 }
 
+.link-custom:hover::after {
+  width: 100%;
+}
+
+.bg-base {
+  background-color: var(--color-base);
+}
+
 .shadow-effect {
   transition: all 0.5s;
 }
 .shadow-effect:hover {
   box-shadow: -6px 6px 0 0 var(--color-brand);
+}
+
+.iconbox {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  background-color: var(--color-brand);
+  color: var(--color-base);
 }
