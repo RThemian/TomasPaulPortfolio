@@ -358,7 +358,7 @@
 
       <!--CONTACT-->
       <section id="contact" class="full-height px-lg-5">
-        <div className="container">
+        <div className="container ">
           <div class="row" data-aos="fade-up">
             <div class="col-lg-8 pb-4">
               <h6 class="text-brand">Contact</h6>
@@ -371,16 +371,18 @@
                   <input
                     type="text"
                     name = 'name'
-                    class="form-control"
+                    class="form-control text-light"
                     placeholder="Enter your name"
+                    required
                   />
                 </div>
                 <div class="form-group col-md-6">
                   <input
-                    type="text"
+                    type="email"
                     name = 'email'
                     class="form-control"
                     placeholder="Enter your email"
+                    required
                   />
                 </div>
                 <div class="form-group col-12">
@@ -390,15 +392,17 @@
                   placeholder='subject'
                   class="form-control"
                  placeholder="Enter subject"
+                 required
                   />
                 </div>
                 <div class="form-group col-12">
                   <textarea
-                    class="col-12"
+                    class="col-12 "
                     rows="4"
                     type="text" 
                     name="message"
                     placeholder="Enter your message"
+                    required
                   ></textarea>
                 </div>
                 <div class="form-group col-12 d-grid">
