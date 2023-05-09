@@ -101,6 +101,12 @@ img {
   padding-left: var(--sidebar-width);
 }
 
+@media (max-width: 991.98px) {
+  #content-wrapper {
+    padding-left: 150px;
+    padding-right: 20px
+  }
+}
 /*Button*/
 
 .btn {
