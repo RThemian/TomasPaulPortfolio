@@ -99,6 +99,8 @@ img {
 /*CONTENT WRAPPER*/
 #content-wrapper {
   padding-left: var(--sidebar-width);
+  /* remove margin top */
+  
 }
 
 @media (max-width: 991.98px) {
@@ -185,3 +187,40 @@ img {
   color: white !important;
   opacity: 1;
 }
+
+
+.container {
+  display: block;
+  margin-top: 10%;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.container>p {
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+[href] {
+    color: #468966;
+    text-decoration: none;
+    font-size: inherit;
+}
+
+hr {
+    display: block;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 80px;
+}
+
